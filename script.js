@@ -10,12 +10,12 @@ function jump() {
     if (mario.classList != "jump") {
         mario.classList.add("jump")
     }
-    setTimeout( function () { // візівает функцию 1 раз через определенній интервал времени
+    setTimeout( function () { 
         mario.classList.remove("jump")
     }, 500)
 }
 
-let isAlive = setInterval(function () { // регулярній візов функии через определнній интервал времени
+let isAlive = setInterval(function () { 
     let marioTop = parseInt(window.getComputedStyle(mario).getPropertyValue("top"));
     let pipelineLeft = parseInt(window.getComputedStyle(pipeline).getPropertyValue("left"));
 
